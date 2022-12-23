@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.001s</div>
+<div class="counter">0.002s</div>
 <p>duration</p>
 </div>
 </td>
@@ -292,7 +292,7 @@ Caused by: java.lang.IllegalArgumentException: JPA metamodel must not be empty!
 </tr>
 <tr>
 <td class="failures">hello가_리턴된다</td>
-<td class="failures">0.001s</td>
+<td class="failures">0.002s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -300,12 +300,12 @@ Caused by: java.lang.IllegalArgumentException: JPA metamodel must not be empty!
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2022-12-23 03:24:14.221  INFO 13944 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.jojoldu.book.springboot.web.HelloControllerTest], using SpringBootContextLoader
-2022-12-23 03:24:14.222  INFO 13944 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.jojoldu.book.springboot.web.HelloControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2022-12-23 03:24:14.223  INFO 13944 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.jojoldu.book.springboot.web.HelloControllerTest]: HelloControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2022-12-23 03:24:14.244  INFO 13944 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.jojoldu.book.springboot.Application for test class com.jojoldu.book.springboot.web.HelloControllerTest
-2022-12-23 03:24:14.245  INFO 13944 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-2022-12-23 03:24:14.245  INFO 13944 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@f78a671, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@27170bff, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@39dba9f6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7459bb5c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3e58d088, org.springframework.test.context.transaction.TransactionalTestExecutionListener@210f6c4f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@45ffe581, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7cc53539, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4e166b9, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5ed61f7e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@64bf2ac8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3106a79b]
+<pre>2022-12-23 19:40:51.787  INFO 23240 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.jojoldu.book.springboot.web.HelloControllerTest], using SpringBootContextLoader
+2022-12-23 19:40:51.788  INFO 23240 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.jojoldu.book.springboot.web.HelloControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-12-23 19:40:51.788  INFO 23240 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.jojoldu.book.springboot.web.HelloControllerTest]: HelloControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-12-23 19:40:51.814  INFO 23240 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.jojoldu.book.springboot.Application for test class com.jojoldu.book.springboot.web.HelloControllerTest
+2022-12-23 19:40:51.815  INFO 23240 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2022-12-23 19:40:51.816  INFO 23240 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@37553698, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@222f38df, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@315a361, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@34e3d060, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2a1cd192, org.springframework.test.context.transaction.TransactionalTestExecutionListener@712eedce, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5f0e4621, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@75c4fd70, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3918321b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3f5ef86b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@124c9eef, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@40b1deab]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -315,13 +315,13 @@ Caused by: java.lang.IllegalArgumentException: JPA metamodel must not be empty!
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.7.RELEASE)
 
-2022-12-23 03:24:14.273  INFO 13944 --- [    Test worker] c.j.b.s.web.HelloControllerTest          : Starting HelloControllerTest on LAPTOP-BUU2COMO with PID 13944 (started by say00 in C:\Users\say00\Desktop\TP_Study\freelec-springboot2-webservice2)
-2022-12-23 03:24:14.274  INFO 13944 --- [    Test worker] c.j.b.s.web.HelloControllerTest          : No active profile set, falling back to default profiles: default
-2022-12-23 03:24:14.445  WARN 13944 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaAuditingHandler': Cannot resolve reference to bean 'jpaMappingContext' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
-2022-12-23 03:24:14.449  INFO 13944 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
+2022-12-23 19:40:51.846  INFO 23240 --- [    Test worker] c.j.b.s.web.HelloControllerTest          : Starting HelloControllerTest on LAPTOP-BUU2COMO with PID 23240 (started by say00 in C:\Users\say00\Desktop\TP_Study\freelec-springboot2-webservice2)
+2022-12-23 19:40:51.847  INFO 23240 --- [    Test worker] c.j.b.s.web.HelloControllerTest          : No active profile set, falling back to default profiles: default
+2022-12-23 19:40:52.013  WARN 23240 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaAuditingHandler': Cannot resolve reference to bean 'jpaMappingContext' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+2022-12-23 19:40:52.016  INFO 23240 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-12-23 03:24:14.456 ERROR 13944 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
+2022-12-23 19:40:52.023 ERROR 23240 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaAuditingHandler': Cannot resolve reference to bean 'jpaMappingContext' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
 	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:314) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
@@ -424,13 +424,13 @@ Caused by: java.lang.IllegalArgumentException: JPA metamodel must not be empty!
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.7.RELEASE)
 
-2022-12-23 03:24:14.487  INFO 13944 --- [    Test worker] c.j.b.s.web.HelloControllerTest          : Starting HelloControllerTest on LAPTOP-BUU2COMO with PID 13944 (started by say00 in C:\Users\say00\Desktop\TP_Study\freelec-springboot2-webservice2)
-2022-12-23 03:24:14.487  INFO 13944 --- [    Test worker] c.j.b.s.web.HelloControllerTest          : No active profile set, falling back to default profiles: default
-2022-12-23 03:24:14.661  WARN 13944 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaAuditingHandler': Cannot resolve reference to bean 'jpaMappingContext' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
-2022-12-23 03:24:14.663  INFO 13944 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
+2022-12-23 19:40:52.051  INFO 23240 --- [    Test worker] c.j.b.s.web.HelloControllerTest          : Starting HelloControllerTest on LAPTOP-BUU2COMO with PID 23240 (started by say00 in C:\Users\say00\Desktop\TP_Study\freelec-springboot2-webservice2)
+2022-12-23 19:40:52.052  INFO 23240 --- [    Test worker] c.j.b.s.web.HelloControllerTest          : No active profile set, falling back to default profiles: default
+2022-12-23 19:40:52.180  WARN 23240 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaAuditingHandler': Cannot resolve reference to bean 'jpaMappingContext' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+2022-12-23 19:40:52.181  INFO 23240 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-12-23 03:24:14.664 ERROR 13944 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
+2022-12-23 19:40:52.183 ERROR 23240 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaAuditingHandler': Cannot resolve reference to bean 'jpaMappingContext' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
 	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:314) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
@@ -523,7 +523,7 @@ Caused by: java.lang.IllegalArgumentException: JPA metamodel must not be empty!
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
 	... 76 common frames omitted
 
-2022-12-23 03:24:14.669 ERROR 13944 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7459bb5c] to prepare test instance [com.jojoldu.book.springboot.web.HelloControllerTest@442c7eec]
+2022-12-23 19:40:52.187 ERROR 23240 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@34e3d060] to prepare test instance [com.jojoldu.book.springboot.web.HelloControllerTest@66f2ecb1]
 
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
@@ -629,13 +629,13 @@ Caused by: java.lang.IllegalArgumentException: JPA metamodel must not be empty!
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.7.RELEASE)
 
-2022-12-23 03:24:14.703  INFO 13944 --- [    Test worker] c.j.b.s.web.HelloControllerTest          : Starting HelloControllerTest on LAPTOP-BUU2COMO with PID 13944 (started by say00 in C:\Users\say00\Desktop\TP_Study\freelec-springboot2-webservice2)
-2022-12-23 03:24:14.703  INFO 13944 --- [    Test worker] c.j.b.s.web.HelloControllerTest          : No active profile set, falling back to default profiles: default
-2022-12-23 03:24:14.868  WARN 13944 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaAuditingHandler': Cannot resolve reference to bean 'jpaMappingContext' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
-2022-12-23 03:24:14.869  INFO 13944 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
+2022-12-23 19:40:52.217  INFO 23240 --- [    Test worker] c.j.b.s.web.HelloControllerTest          : Starting HelloControllerTest on LAPTOP-BUU2COMO with PID 23240 (started by say00 in C:\Users\say00\Desktop\TP_Study\freelec-springboot2-webservice2)
+2022-12-23 19:40:52.218  INFO 23240 --- [    Test worker] c.j.b.s.web.HelloControllerTest          : No active profile set, falling back to default profiles: default
+2022-12-23 19:40:52.397  WARN 23240 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaAuditingHandler': Cannot resolve reference to bean 'jpaMappingContext' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+2022-12-23 19:40:52.399  INFO 23240 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-12-23 03:24:14.871 ERROR 13944 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
+2022-12-23 19:40:52.400 ERROR 23240 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaAuditingHandler': Cannot resolve reference to bean 'jpaMappingContext' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
 	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:314) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
@@ -738,13 +738,13 @@ Caused by: java.lang.IllegalArgumentException: JPA metamodel must not be empty!
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.7.RELEASE)
 
-2022-12-23 03:24:14.895  INFO 13944 --- [    Test worker] c.j.b.s.web.HelloControllerTest          : Starting HelloControllerTest on LAPTOP-BUU2COMO with PID 13944 (started by say00 in C:\Users\say00\Desktop\TP_Study\freelec-springboot2-webservice2)
-2022-12-23 03:24:14.896  INFO 13944 --- [    Test worker] c.j.b.s.web.HelloControllerTest          : No active profile set, falling back to default profiles: default
-2022-12-23 03:24:15.046  WARN 13944 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaAuditingHandler': Cannot resolve reference to bean 'jpaMappingContext' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
-2022-12-23 03:24:15.047  INFO 13944 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
+2022-12-23 19:40:52.430  INFO 23240 --- [    Test worker] c.j.b.s.web.HelloControllerTest          : Starting HelloControllerTest on LAPTOP-BUU2COMO with PID 23240 (started by say00 in C:\Users\say00\Desktop\TP_Study\freelec-springboot2-webservice2)
+2022-12-23 19:40:52.431  INFO 23240 --- [    Test worker] c.j.b.s.web.HelloControllerTest          : No active profile set, falling back to default profiles: default
+2022-12-23 19:40:52.564  WARN 23240 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaAuditingHandler': Cannot resolve reference to bean 'jpaMappingContext' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+2022-12-23 19:40:52.565  INFO 23240 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-12-23 03:24:15.049 ERROR 13944 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
+2022-12-23 19:40:52.567 ERROR 23240 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaAuditingHandler': Cannot resolve reference to bean 'jpaMappingContext' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
 	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:314) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
@@ -837,7 +837,7 @@ Caused by: java.lang.IllegalArgumentException: JPA metamodel must not be empty!
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
 	... 76 common frames omitted
 
-2022-12-23 03:24:15.053 ERROR 13944 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7459bb5c] to prepare test instance [com.jojoldu.book.springboot.web.HelloControllerTest@678de7b1]
+2022-12-23 19:40:52.571 ERROR 23240 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@34e3d060] to prepare test instance [com.jojoldu.book.springboot.web.HelloControllerTest@c9364f5]
 
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
@@ -945,7 +945,7 @@ Caused by: java.lang.IllegalArgumentException: JPA metamodel must not be empty!
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.10.2</a> at 2022. 12. 23 오전 3:24:18</p>
+<a href="http://www.gradle.org">Gradle 4.10.2</a> at 2022. 12. 23 오후 7:40:55</p>
 </div>
 </div>
 </body>
