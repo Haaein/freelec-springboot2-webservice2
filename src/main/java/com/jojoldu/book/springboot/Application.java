@@ -9,5 +9,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 public class Application {
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
+        int i; //코드 임시 추가
     }
 }
