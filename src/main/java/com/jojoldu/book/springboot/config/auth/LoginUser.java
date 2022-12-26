@@ -1,4 +1,8 @@
 package com.jojoldu.book.springboot.config.auth;
+import java.lang.annotation.*;
 
-public class LoginUser {
+@Target(ElementType.PARAMETER)
+@Retention(RetentionPolicy.RUNTIME)
+public @interface LoginUser {
+
 }
